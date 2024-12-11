@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfall Development Model</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../../..//konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="" class="navbarDropdownLink">Riistvara</a>
+                        <a href="" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="mainContent">
+        <a href="../../../konspektid/tarkvara_arendusprotsessid/elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
+
+        <h1>Waterfall mudel</h1>
+
+        <p>Waterfall mudel on vanim ja enim kritiseeritud protsessimudel. Selle kirjeldas Winston W. Royce aastal 1970. Mudeli põhimõte on, et tegevused toimuvad järjestikku eraldi etappides. Royce jagas etapid järgmiselt:</p>
+        
+        <section>
+            <h2>Protsessi etapid</h2>
+            <ul>
+                <li>
+                    <h3>Nõuete määratlemine</h3>
+                    <p>Jaguneb kaheks osaks: süsteemianalüüs (kõik, mis ümbritseb konkreetset tarkvara) ja nõuete analüüs. Süsteemi käitumine, jõudlus, liidesed jne dokumenteeritakse.</p>
+                </li>
+                <li>
+                    <h3>Süsteemi ja tarkvara disain</h3>
+                    <p>Keskendutakse põhiprogrammi omadustele, nagu andmestruktuurid, tarkvara arhitektuur, liideste spetsifikatsioonid ning protseduurilised ja algoritmilised detailid. Projekti kvaliteeti saab hinnata. Tulemused dokumenteeritakse.</p>
+                </li>
+                <li>
+                    <h3>Teostus ja moodulitestimine</h3>
+                    <p>Projekti kirjeldatud süsteem programmeeritakse moodulite ja programmide kogumina, mida testitakse eraldi. Mida detailsem projekt, seda lihtsam ja mehhaanilisem saab olema teostusetapp.</p>
+                </li>
+                <li>
+                    <h3>Integratsioon ja süsteemi testimine</h3>
+                    <p>Programmid ja moodulid integreeritakse ning testitakse terviksüsteemina. Pärast testimist tarnitakse toode kliendile. Testimine keskendub loogilistele detailidele ja sellele, kas süsteem vastab funktsionaalsetele nõuetele.</p>
+                </li>
+                <li>
+                    <h3>Kasutamine ja hooldus</h3>
+                    <p>See on tavaliselt kõige pikem etapp. Süsteemi muudetakse, kui kasutajad avastavad vigu, keskkond ja töötingimused muutuvad või klient soovib uut funktsionaalsust. See etapp kordab kõiki eelnevaid etappe olemasoleva süsteemi muutmise kontekstis.</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Pilt ja tabel</h2>
+            <img src="../../../pildid/waterfall.jpeg" alt="Koskmudel" style="max-width: 100%; height: auto;">
+            <table border="1" cellpadding="8" style="margin-top: 20px; width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="background-color: beige;">Plussid</th>
+                        <th style="background-color: beige;">Miinused</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mudelil on selge struktuur</td>
+                        <td>Muudatusi on raske rakendada</td>
+                    </tr>
+                    <tr>
+                        <td>Seab lõppeesmärgid varakult</td>
+                        <td>Projekti kestus on pikem</td>
+                    </tr>
+                    <tr>
+                        <td>Edastab teavet hästi</td>
+                        <td>Klient võib projekti käigus meelt muuta</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Viited</h2>
+            <p>Siin on allikad, mida kasutasin koskmudeli plusside ja miinuste kohta info saamiseks:</p>
+            <a href="https://www.lucidchart.com/blog/pros-and-cons-of-waterfall-methodology" target="_blank" class="modelLink">Informatsioon hea ja halva külgede kohta</a>
+            <br>
+            <br>
+            <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html" target="_blank" class="modelLink">Informatsioon koskmudeli kohta</a>
+        </section>
+    </div>
+</body>
+</html>

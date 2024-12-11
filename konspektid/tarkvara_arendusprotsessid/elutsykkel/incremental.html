@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkrementaalne arendusmudel</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../../../" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="" class="navbarDropdownLink">Riistvara</a>
+                        <a href="" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="mainContent">
+    <p>
+        <a href="../../../konspektid/tarkvara_arendusprotsessid/elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
+        <h1>Inkrementaalne mudel</h1>
+        <p>Tarkvara spetsifikatsioon, projekt ja teostus jaotatakse osadeks (increment), mida asutakse ükshaaval arendama.</p>
+        <br/>
+        <h2>Tegevuste käik</h2>
+        <ul>
+            <li>
+                <h3>Nõuete üldine määratlemine ja jaotamine tähtsuse järgi</h3>
+                <p>Arendusprotsess algab klientide ja arendajate koostöös, kus kaardistatakse ja jaotatakse süsteemi nõuded tähtsuse järgi. Kõrgema prioriteediga nõuded valitakse esimesteks arendusetappideks (inkrementideks).</p>
+            </li>
+            <li>
+                <h3>Inkrementide määramine ja arendusplaani koostamine</h3>
+                <p>Määratakse, millised tarkvaraosad moodustavad iga inkrementi ja millises järjekorras neid arendatakse. Samuti määratakse tarneajad, et klient teaks, millal ta mingit osa süsteemist kasutada saab.</p>
+            </li>
+            <li>
+                <h3>Esimese inkremendi üksikasjalik planeerimine ja arendamine</h3>
+                <p>Esimene inkrement arendatakse, lähtudes selle jaoks määratud nõuetest. Kuna esimese osa nõuded on „külmutatud” ehk kindlaks määratud, saavad arendajad keskenduda selle osa põhjalikule väljatöötamisele.</p>
+            </li>
+            <li>
+                <h3>Esimese inkremendi testimine ja kliendile tarnimine</h3>
+                <p>Kui inkrement on valmis, testitakse seda põhjalikult, et tagada selle kvaliteet ja funktsionaalsus. Pärast edukat testimist tarnitakse inkrement kliendile, kes saab seda kasutada või testida, andes arendajatele tagasisidet.</p>
+            </li>
+            <li>
+                <h3>Tagasiside kogumine ja järgmise inkremendi täpsustamine</h3>
+                <p>Pärast esimese inkremendi tarnimist kogutakse kliendilt tagasisidet, mis aitab järgmise inkremendi nõudeid täpsustada. Klient võib välja tuua uusi nõudeid või teha ettepanekuid, mis parandavad süsteemi järgmisi osi.</p>
+            </li>
+            <li>
+                <h3>Järgmise inkremendi arendamine ja integreerimine olemasolevaga</h3>
+                <p>Nüüd algab järgmise inkremendi detailplaneerimine ja arendamine, kasutades vajadusel eelmistest inkrementidest saadud teadmisi ja täpsustatud nõudeid. Seejärel integreeritakse valminud osa olemasolevasse süsteemi, võimaldades süsteemil kasvada järk-järgult terviklikuks.</p>
+            </li>
+            <li>
+                <h3>Kordamine järgmiste inkrementide puhul</h3>
+                <p>Sama protsessi korratakse iga inkremendi puhul, kuni kõik nõutud süsteemiosad on valmis ja integreeritud. Iga uus inkrement tugineb eelnevalt kogutud tagasisidele ja vajadusel täiendatakse nõudeid, et süsteem vastaks kliendi ootustele.</p>
+            </li>
+        </ul>
+        <img src="../../../pildid/incremental.png" alt="Inkrementaalne mudeli skeem" style="width: 800px; height: auto;">
+
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th style="background-color: beige;">Head</th>
+                    <th style="background-color: beige;">Vead</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Järkjärguline arendamine</td>
+                    <td>Nõuete pidev täpsustamine</td>
+                </tr>
+                <tr>
+                    <td>Kiire tagasiside tsükkel</td>
+                    <td>Suur sõltuvus kliendipoolsest tagasisidest</td>
+                </tr>
+                <tr>
+                    <td>Riskide vähendamine</td>
+                    <td>Integreerimisprobleemid</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <a href="https://www.geeksforgeeks.org/advanategs-and-disadvanategs-of-incremental-process-model/">Siit sain info heade ja halbade külgede kohta</a>
+        <br/>
+        <br/>
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html">Siit sain info Inkrementaal mudeli kontseptsiooni kohta</a>
+    </p>
+</div>
+</body>
+</html>

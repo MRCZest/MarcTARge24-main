@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Model arendusmudel</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../../../konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="" class="navbarDropdownLink">Riistvara</a>
+                        <a href="" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="mainContent">
+        <a href="../../../../konspektid/tarkvara_arendusprotsessid/elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
+
+        <h1>V-Model</h1>
+
+        <p>V-Model ehk V-kujuline arendusmudel on lineaarne ja järjestikune arendusprotsess, mis rõhutab nii verifitseerimist kui valideerimist igas etapis. Mudel kujutab arendusprotsessi V-kujulise graafikuna, kus iga arendusetapiga on seotud vastav testimise etapp.</p>
+
+        <section>
+            <h2>Protsessi etapid</h2>
+            <ul>
+                <li>
+                    <h3>Nõuete määratlemine</h3>
+                    <p>Kogutakse ja analüüsitakse süsteemi ja tarkvara nõudeid, et mõista kliendi ootusi. See faas loob aluse aktsepteerimistestidele.</p>
+                </li>
+                <li>
+                    <h3>Süsteemi disain</h3>
+                    <p>Luua terviklik süsteemidisain, mis hõlmab funktsionaalseid ja mittefunktsionaalseid nõudeid. Tulemusi kasutatakse süsteemitestide kavandamisel.</p>
+                </li>
+                <li>
+                    <h3>Arhitektuuri disain</h3>
+                    <p>Koostatakse kõrgetasemeline disain (High-Level Design - HLD), mis määratleb süsteemi põhikomponendid ja nende omavahelised suhted.</p>
+                </li>
+                <li>
+                    <h3>Modulaarne disain</h3>
+                    <p>Luua detailne madala taseme disain (Low-Level Design - LLD), mis määratleb iga mooduli täpsed funktsioonid ja loogika. Seda kasutatakse üksustestimise kavandamiseks.</p>
+                </li>
+                <li>
+                    <h3>Kodeerimine</h3>
+                    <p>Süsteem programmeeritakse ja dokumenteeritakse. Iga moodul arendatakse vastavalt detailsetele disainijuhistele.</p>
+                </li>
+                <li>
+                    <h3>Üksustestimine</h3>
+                    <p>Iga moodulit testitakse eraldi, et kontrollida, kas see vastab madala taseme disaini spetsifikatsioonidele.</p>
+                </li>
+                <li>
+                    <h3>Integratsioonitestimine</h3>
+                    <p>Moodulid ühendatakse ja testitakse, et veenduda, et nad töötavad koos ja vastavad arhitektuurse disaini nõuetele.</p>
+                </li>
+                <li>
+                    <h3>Süsteemitestimine</h3>
+                    <p>Kogu süsteemi testimine, et kinnitada, et kõik funktsionaalsed ja mittefunktsionaalsed nõuded on täidetud.</p>
+                </li>
+                <li>
+                    <h3>Kasutaja aktsepteerimistestimine</h3>
+                    <p>Veendutakse, et lõplik toode vastab kliendi ootustele ja on valmis kasutamiseks.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Pilt ja tabel</h2>
+            <img src="../../../../pildid/v-model.png" class="mainContentPicture" alt="V-Model graafik" style="max-width: 100%; height: auto;">
+            <table border="1" cellpadding="8" style="margin-top: 20px; width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="background-color: beige;">Head</th>
+                        <th style="background-color: beige;">Vead</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Varane vigade avastamine ja parandamine</td>
+                        <td>Ei sobi hästi paindlike ja muutuvate nõuetega projektidele</td>
+                    </tr>
+                    <tr>
+                        <td>Iga etapi selge struktuur</td>
+                        <td>Testimine algab alles pärast kodeerimise lõppu</td>
+                    </tr>
+                    <tr>
+                        <td>Rõhutab kvaliteedikontrolli igal etapil</td>
+                        <td>Kõrgemad kulud võrreldes paindlikumate mudelitega</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Viited</h2>
+            <p>Siin on minu viiteallikas:</p>
+            <a href="https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/" target="_blank" class="modelLink">Siit sain info V-Modeli kontseptsiooni kohta</a>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Elutsükkel</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <style>
+        /* Style for the "Tagasiminek" button */
+        a[style="font-size: 20px;"] {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        a[style="font-size: 20px;"]:hover {
+            background-color: #0056b3;
+        }
+        .modelLink {
+            font-size: 20px;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for a bigger clickable area */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .modelLink:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../../../konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="../../../tarkvara_arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="" class="navbarDropdownLink">Riistvara</a>
+                        <a href="" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="AndmebaasMain">
+        <div class="mainContent">
+            <a href="../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="modelLink">Tagasiminek</a>
+        </div>
+        <h1 >Visual Studio andmebaas</h1>
+
+        <p>See andmebaas on SQLite andmebaas, mis on seotud Windows Forms rakendusega, kus kasutatakse Entity Framework Core'i (EF Core) andmebaasi haldamiseks.</p>
+        <p>Rakendus hoiab ja kuvab andmeid kahes tabelis: Products (tooted) ja Categories (kategooriad).</p>
+        <p>SQLite on kerge ja kaasaskantav SQL-põhine andmebaas, mis ei vaja eraldi serverit ja salvestab andmed faili, mis teeb selle ideaalseks väikeste ja keskmise suurusega rakenduste jaoks.</p>
+        <br>
+        <br>
+        <img src="../../../pildid/andmebaas.png">
+        <div class="container">
+            <a href="https://github.com/MRCZest/Andmebaasid" target="">
+                <button class="custom-button">Visual Studio Andmebaasi repo</button>
+            </a>
+        </div>      
+    </div>
+<footer class="footer"></footer>
+
+    </div>
+</head>
+</html>

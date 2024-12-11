@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiraal arendusmudel</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../../../konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="" class="navbarDropdownLink">Riistvara</a>
+                        <a href="" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="mainContent">
+        <a href="../../../konspektid/tarkvara_arendusprotsessid/elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
+
+        <h1>Spiraalmudel</h1>
+        <p>Spiraalmudel on iteratiivne tarkvaraarendusmudel, mille kirjeldas esimest korda Barry Boehm 1986. aastal. Mudeli arendusprotsessi kujutab spiraal, mille iga kordus keskendub konkreetsele arendusaspektile.</p>
+
+        <section>
+            <h2>Tegevuste käik</h2>
+            <ul>
+                <li>
+                    <h3>Eesmärkide seadmine</h3>
+                    <p>Iga kordus algab eesmärkide, piirangute, tulemite ja juhtimisplaani määratlemisega. Samuti tuvastatakse võimalikud riskid ja koostatakse strateegiad nende maandamiseks.</p>
+                </li>
+                <li>
+                    <h3>Riskide hindamine ja maandamine</h3>
+                    <p>Selle etapi eesmärk on analüüsida tuvastatud riske ning leida viise nende maandamiseks, näiteks prototüüpide loomine, kui nõuded on ebamäärased.</p>
+                </li>
+                <li>
+                    <h3>Arendus ja valideerimine</h3>
+                    <p>Arendamiseks valitakse mudel, mis sobib kõige paremini riskide vähendamiseks. Näiteks suurte riskidega kasutajaliidese puhul võib abiks olla prototüüpide loomine.</p>
+                </li>
+                <li>
+                    <h3>Planeerimine</h3>
+                    <p>Iga korduse lõpus hinnatakse projekti edenemist ja tehakse otsus, kas minna edasi järgmise kordusega. Kui otsustatakse jätkata, koostatakse järgmise faasi plaan.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Pilt ja tabel</h2>
+            <img src="../../../../pildid/spiraal.jpg" alt="Spiraali arendusmudeli skeem" style="max-width: 100%; height: auto;">
+            <table border="1" cellpadding="8" style="margin-top: 20px; width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="background-color: beige;">Head</th>
+                        <th style="background-color: beige;">Vead</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tarkvara valmib varajases etapis tarkvara elutsüklis.</td>
+                        <td>Ei sobi väikestele projektidele, kuna on kulukas.</td>
+                    </tr>
+                    <tr>
+                        <td>Tugev heakskiidu ja dokumentatsiooni kontroll.</td>
+                        <td>On oluliselt keerukam kui teised SDLC mudelid.</td>
+                    </tr>
+                    <tr>
+                        <td>Sobib kõrge riskiga projektidele, kus ärivajadused võivad olla ebastabiilsed.</td>
+                        <td>Spiraal võib jätkuda määramatult.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Viited</h2>
+            <a href="https://www.geeksforgeeks.org/software-engineering-spiral-model/" target="_blank" class="modelLink">Spiraali mudeli viide</a>
+            <a href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-using-spiral-model/" target="_blank" class="modelLink">Spiraal mudeli eelised ja puudused</a>
+        </section>
+    </div>
+</body>
+</html>
