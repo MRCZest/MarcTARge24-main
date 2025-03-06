@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Domain</title>
+    <link rel="stylesheet" href="../../../../style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../../../../konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="../../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="" class="navbarDropdownLink">Riistvara</a>
+                        <a href="" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+<body>
+    <div class="mainContent">
+        <a href="../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="modelLink">Tagasiminek</a>
+    </div>
+    <div class="mainContent">      
+        <p>Testipõhine arendus (TDD) on tarkvara arendamise protsess, mis rakendab katsejuhtumeid enne tarkvara täielikku väljaarendamist ja seega katsetab tarkvara kuni valmimiseni.</p>
+       <p>TDD muudab tarkvaraarenduse protsessi kiiremaks ja tõhusamaks, mitte tava oodata, kuni tarkvara on enne testide tegemist täielikult välja töötatud. TDD keskendub lihtsusele / ainult kirjutamiskoodi, mis on vajalik testide läbimiseks, mis annab endale lihtsama ja puhtama disaini.</p>
+       <p>Testimise tava:</p>
+       <ul>
+        <li>1. Loo test</li>
+        <li>2. Käivitage kõik testid.</li>
+        <li>3. Kirjuta kõige lihtsam kood, mis uuesti testi läbib.</li>
+        <li>4. Jätkake, kuni kõik testid läbitud.</li>
+        <li>5. Refaktor</li>
+        <li>6. Korda 1-5 samm vastavalt vajadustele</li>
+    </ul>
+       <img src="../../../../pildid/image-blog-test-driven-data.avif" alt="" width="500" height="550">
+       <p>Näide tööriistast: JUnit</p>
+    <br>
+    <p>Eelised:</p>
+       <ul>
+        <li>Arendaja tootlikkust suurendab, mis viib paindlikuma ja kergemini hooldatava koodibasseini loomiseni.</li>
+        <li>Uusi funktsioone on lihtsam lisada ja katsetada hiljem arengus.</li>
+        <li>Arendajad oskavad klientide vajadusi paremini uurida ja mõista</li>
+        <li>Rohkem rõhku pannakse optimeeritud koodi loomisele</li>
+        <li>Testide katvus suureneb järsult, sest TDD tähendab üksikute funktsioonide testide loomist projekti algusest peale.</li>
+       </ul>
+        </div>
+    
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th style="background-color: beige;">Head</th>
+                    <th style="background-color: beige;">Vead</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Parandab koodi kvaliteeti ja lihtsustab hooldust</td>
+                    <td>Üleliigne hoolduskulu</td>
+                </tr>
+                <tr>
+                    <td>Vähendab vigade tekkimist</td>
+                    <td>Testimine võib olla keeruline</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mainContent">
+        <a href="https://www.perfecto.io/blog/test-driven-development#what-is-test-driven-development" target="_blank" class="modelLink">Allikas</a>
+        </div>
+</body>
+</html>
