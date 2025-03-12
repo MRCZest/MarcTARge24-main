@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agile Continuous</title>
+    <title>Agile Domain</title>
     <link rel="stylesheet" href="../../../../style.css">
 </head>
 <body>
@@ -36,17 +36,21 @@
     </nav>
 <body>
     <div class="mainContent">
-        <a href="../../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="modelLink">Tagasiminek</a>
+        <a href="../../../../konspektid/tarkvara_arendusprotsessid/elutsykkel/agilestiilid/agilestiilid2.html" class="modelLink">Tagasiminek</a>
     </div>
-    <div class="mainContent">  
-        <h2>Agile Continuous (CTDD)</h2>    
-        <p>Pidev katsepõhine areng (CTDD) on tarkvaraarendus, mis laiendab katsepõhist arengut (TDD) automaatse katsetäitmise abil taustal, mida mõnikord nimetatakse pidevaks testimiseks</p>
-        <h3>Praktika</h3>
-       <p>CTDD-s kirjutab arendaja kõigepealt testi, kuid ei ole sunnitud teste käsitsi sooritama. Testid viib automaatselt läbi pidev katsevahend, mis töötab taustal. See tehnika võib vähendada käsitsi katsetäitmisest tulenevat ajaraiskamist, kõrvaldades vajaduse, et arendaja alustaks testi pärast iga tavapärase TDD-praktika etappi</p>
-       <img src="../../../../pildid/BTH-SERL-Sweden.png" alt="" width="500" height="550">
-       <p>Näide tööriistast: Jenkins, CircleCI</p>
-    <br>
+    <div class="mainContent">
+        <h2>Agile Domain</h2>      
+        <p>Domain-Driven Design (DDD) on tarkvaraarenduse filosoofia, mis rõhutab ärivaldkonna mõistmise ja modelleerimise tähtsust. See on strateegia, mille eesmärk on parandada tarkvara kvaliteeti, viies selle paremini vastavusse selle teenindatavate ärivajadustega.</p>
+       <p>Domeenipõhise disaini kujundamine on seotud järgmiste eesmärkidega:</p>
+       <ul>
+        <li>projekti põhirõhk põhirõhk domeeni ja domeeni loogikakihil;</li>
+        <li>keerukate disainilahenduste aluseks on domeeni mudel;</li>
+        <li>algatades tehnilise ja domeenieksperte vahelise loomingulise koostöö, et täiustada kontseptuaalset mudelit, mis tegeleb konkreetsete domeeniprobleemidega.</li>
+    </ul>
+       <img src="../../../../pildid/sketch.png" alt="" width="500" height="550">
+       <p>Näide tööriistast: Axon Framework</p>
         </div>
+    
         <table border="1" cellpadding="8">
             <thead>
                 <tr>
@@ -56,17 +60,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Tagab pideva kvaliteedikontrolli	</td>
-                    <td>Võib suurendada testide kulusi</td>
+                    <td>Lihtsustab keerulisi äriloogikat</td>
+                    <td>Struktuurid ja äriprotsess võib mitte vastata antud struktuurile</td>
                 </tr>
                 <tr>
-                    <td>Kiire tagasiside arendus</td>
-                    <td>Automatiseerimine võib protsessi aeglustada, kui pole õigesti seadistatud</td>
+                    <td>Sobib suurtele projektidele</td>
+                    <td>Ei sobi väikestele projektidele</td>
                 </tr>
             </tbody>
         </table>
         <div class="mainContent">
-        <a href="https://www.sciencedirect.com/topics/computer-science/continuous-model" target="_blank" class="modelLink">Allikas</a>
+        <a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank" class="modelLink">Allikas</a>
         </div>
 </body>
 </html>
